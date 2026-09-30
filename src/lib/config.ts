@@ -1,0 +1,35 @@
+// =============================================================================
+// CONFIGURACION DEL RESTAURANTE (plantilla Your Restaurant)
+// Edita aqui para cambiar nombre, telefono, direccion y zona. Se aplica a toda
+// la pagina (logo, footer, botones, WhatsApp, titulo y meta descripcion).
+// Para cada cliente nuevo: cambia TODAS las lineas marcadas con "<- personalizar".
+// =============================================================================
+
+export const CONFIG = {
+  // Marca / logo del sitio
+  nombre: "Your Restaurant",
+  logoNombre: "Your",
+  logoAcento: "Restaurant",
+  // --- Datos del negocio (<- personalizar por cliente) ---
+  telefono: "600 000 000",
+  telefonoEnlace: "600000000",
+  whatsapp: "34600000000",
+  direccion: "C/ Ejemplo, 1",
+  ciudad: "Tu ciudad",
+  localidad: "Tu codigo postal y ciudad (Toledo)",
+  zona: "TU CIUDAD",
+  tituloSeo: "Cocina de raíz",
+  lemaSeo: "Recetas clásicas, producto de temporada y mesa puesta.",
+  // --- Ficha legal / contacto (RGPD - LSSI). Rellena para un cliente nuevo ---
+  email: "",
+  nif: "",
+  dominio: "https://TU-DOMINIO.com",
+  webhookToken: "hbbk-r65j9hj3-bwan4kpy",
+  // --- Redes sociales (pon aquí las URLs reales de cada cliente; vacío = se oculta) ---
+  instagram: "https://instagram.com/yournegocio",
+  facebook: "https://facebook.com/yournegocio",
+  tiktok: "https://tiktok.com/@yournegocio",
+  youtube: "",
+} as const;
+
+export type Config = typeof CONFIG;
